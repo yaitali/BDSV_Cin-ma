@@ -1,0 +1,648 @@
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body
+{
+    background-image: url("http://cdn.wallpapersafari.com/50/68/ecUsXL.jpg");
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    
+}
+
+#bloc_page
+{
+    width: 800px;
+    margin: auto;
+}
+
+section h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+	
+    
+}
+
+/* Header */
+
+header
+{
+    background-color :black ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+	color : red ;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+	color:red ;
+}
+/* Bannière */
+
+@keyframes banniere {
+	
+ 0% {
+	left : 0%;
+}
+ 	
+	
+20% {
+	left : 0%;
+}	
+	
+25% {
+	left :-100%;
+}	
+	
+45%{
+	left :-100%;
+}	
+50%{
+	left :-200%;
+}	
+
+70%{
+	left :-200%;
+}		
+75%{
+	left :-300%;
+}					
+95%{
+	left :-300%;
+}	
+100%{
+	left :-400%;
+}	
+
+}
+.center {
+    text-align: center;
+	color : white ;
+	font-family: Dayrom, serif;
+    font-weight:bold;
+	text-transform: uppercase;
+	font-style: oblique;
+}
+#section_bnr{
+	width: 600px;
+    margin: auto;
+	
+	
+}
+
+#banniere
+{
+ 
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 25px;
+	
+}
+
+
+#banniere  {
+overflow:hidden;
+
+		
+}		
+#banniere  figure img {
+	width : 20% ;
+	float : left ;
+	
+}
+#banniere  figure {
+	position :relative;
+	width :500%;
+	margin :0;
+	left :0;
+	text-align :left;
+	font-size :0;
+	animation : 20s banniere infinite ;
+}	
+/* Navigation */
+
+
+#droite {
+
+position:absolute;
+right:1%;
+top:1.1em;
+  
+}
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+	
+}
+
+nav li
+{
+    margin-right: 10px;
+}
+
+nav a
+{
+   
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: red;
+    border-bottom: 3px solid red;
+}
+	
+/* barre de recherche */	
+
+
+/*footer*/
+#contact{
+	text-align :center;
+    
+}
+
+footer
+{
+    position:absolute;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color :black;
+    color: white;
+}
+/**************************************** commentaire***************************/
+
+
+
+/* Contact Form Styles */
+h1 {
+   margin: 10px 0 0 0;
+}
+h4{
+   margin: 0 0 20px 0;
+}
+
+/* le menu */
+#menu, #menu ul{
+padding:0;
+margin-top:0;
+list-style:none;
+
+}
+#menu li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu ul li{
+display:inherit;
+border-radius:0;
+}
+#menu ul li:hover{
+border-radius:0;
+}
+#menu ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu ul{
+position:absolute;
+z-index: 1000;
+max-height:0; 
+left: 0;
+right: 0;
+overflow:hidden;
+
+}
+#menu li:hover ul{
+max-height:28em;
+}
+/* background des liens menus */
+#menu  li:first-child{
+background-color: #808080;
+
+}
+#menu  li:nth-child(2){
+background-color:#808080;
+
+}
+#menu  li:nth-child(3){
+background-color: #808080;
+
+}
+#menu  li:nth-child(4){
+background-color: #808080;
+
+}
+#menu li:last-child{
+background-color: #808080;
+
+}
+
+/* background des liens sous menus */
+#menu li:first-child li{
+background:#333A40;
+}
+#menu li:nth-child(2) li{
+background:#333A40;
+}
+#menu li:nth-child(3) li{
+background:#333A40;
+}
+#menu li:nth-child(4) li{
+background:#333A40;
+}
+#menu li:last-child li{
+background:#333A40;
+}
+/* background des liens menus et sous menus au survol */
+
+#menu li:last-child:hover, #menu  li:last-child li:hover{
+background:#808080;
+}
+/* les a href */
+#menu a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu  ul a{
+padding:8px 0;
+}
+#menu  li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu  li:hover a, #menu li li:hover a{
+color:#000;
+}
+#recherche{
+	
+   
+   position:fixed;
+   left:996px;
+   top: 116px;
+
+	
+	
+}
+#searchthis #search {
+
+  background-color: #ffffff;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 2px;
+  border-color: #dddddd;   /* Couleur de la bordure  */
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  box-sizing: border-box;   /* Important */
+  font-family: arial; 
+  font-size: 12px;   /* Taille de la police du texte */
+  
+  letter-spacing: 1px;   /* Espacement des caractères */
+}
+
+#searchthis #search-btn {
+  background-color: #808080;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 2px;
+  border-color: #808080;   /* Couleur de la bordure  */
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  box-sizing: border-box;   /* Important */
+  font-family: arial;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffffff;   /* Couleur du texte */
+}
+
+#searchthis #search-btn:hover {
+  background-color: #ffffff;   /* Couleur de fond */
+  color:  #808080;   /* Couleur du texte */
+  cursor: pointer;   /* Apparence du curseur comme pour un lien */
+}
+
+
+
+
+
+
+
+.footer{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	
+	font: normal  14px sans-serif;
+	margin-top: 100px;
+}
+/* Footer links */
+
+.footer   p.footer-links{
+	
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 10px 0 10px;
+	margin: 0
+}
+
+.footer  p.footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+/*page de connexion*/
+.form-connexion{
+	
+
+  position: absolute;
+  width: 550px;
+  height: 200px;
+  left: 300px;
+  top: 200px;
+  padding-left: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 22px -1px rgba(0,0,0,0.57);
+  background-image: url("http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark1400x900.jpg");
+  color:white;  
+}
+.form-inscription{
+position: absolute;
+  width: 550px;
+  height: auto;
+  left: 300px;
+  top: 130px;
+  background-image: url("http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark1400x900.jpg");
+  padding-left: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+ color:white;
+  box-shadow: 4px 4px 22px -1px rgba(0,0,0,0.57);
+}	
+	
+	
+.champ{
+height:20px;
+width:20px;	
+	
+	
+}
+	
+	
+	
+.form-inscription .form-control{
+  width: 80%;
+}
+
+
+
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+.form-connexion  a {
+	color:white;
+}
+
+.form-connexion .form-control{
+  width: 60%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+}
+
+
+.btn-info {
+  color: #fff;
+  background-color:#808080;
+  border-color:#808080;
+  font-weight:bold;
+  height:30px;
+  line-height:29px;
+  width:120px;
+  
+}
+.btn-info:hover{
+		color:black;
+}
+#cmm
+{
+	font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+	color:white ;
+	text-align: center;
+	
+}
+
+.Feeds{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.MainWebsite .Feeds .News{
+  position: absolute;
+
+  width: 400px;
+  height: 250px;
+  background: #EEEEEE;
+}
+.Profil{
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  color: white;
+}
+
+.Profil a {
+	color:white;
+}
+
+
+
+
+table   a{
+	color:white;
+	
+}
+
+
+
+table {
+	
+	font-size: 16px;
+	color:white;
+	line-height: 24px;
+	text-align: left;
+	width: 800px;
+	background-image: url(http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark1400x900.jpg);
+}
+.Results{
+  position: relative;
+  top: 80px;
+  width: 60%;
+  height: auto;
+  left: 160px;
+  background-image: url(http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark1400x900.jpg);
+
+}	
+
+.table  td {	
+	padding: 2px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+
+td {
+	
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+ a  {
+	 color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+		/*  
+		 * Rating styles*/
+		 
+		.rating {
+			width:160px;
+			top:0px;
+			font-size: 18px;
+			overflow:hidden;
+		}
+		.rating a {
+			float:right;
+			color: #aaa;
+			
+			text-decoration: none;
+			
+			transition: color .4s;
+		}
+		.rating a:hover,
+		.rating a:hover ~ a,
+		.rating a:focus,
+		.rating a:focus ~ a		{
+			color: orange;
+			cursor: pointer;
+		}
+		.rating2 {
+			direction: rtl;
+		}
+		.rating2 a {
+			float:none
+		}
+		.commentaire a{
+			color:white;
+			font-size:14px;
+			
+		}
+
+
